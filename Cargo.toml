@@ -14,7 +14,7 @@ harness = false
 
 
 [dev-dependencies]
-ahash = "*"
+ahash = { git = "https://github.com/brayniac/aHash", branch = "aarch64" }
 criterion = "0.3.4"
 
 [profile.bench]
