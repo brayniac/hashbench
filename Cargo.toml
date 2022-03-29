@@ -11,7 +11,7 @@ path = "benches/benchmark.rs"
 harness = false
 
 [dependencies]
-
+ahash = { git = "https://github.com/brayniac/aHash", branch = "aarch64" }
 
 [dev-dependencies]
 ahash = { git = "https://github.com/brayniac/aHash", branch = "aarch64" }
