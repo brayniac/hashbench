@@ -1,0 +1,26 @@
+[package]
+name = "ahashbench"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bench]]
+name = "benchmark"
+path = "benches/benchmark.rs"
+harness = false
+
+[dependencies]
+
+
+[dev-dependencies]
+ahash = "*"
+criterion = "0.3.4"
+
+[profile.bench]
+opt-level = 3
+debug = true
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 1
